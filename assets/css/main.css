@@ -264,7 +264,7 @@ body {
   color: #777;
   width: 30em;
   background: #eee;
-  position: absolute;
+  position: fixed;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
