@@ -2,10 +2,18 @@
   "name": "mojito",
   "description": "Gulp + Babel + ES6 + Stylus",
   "version": "0.1.0",
-  "author": {
-    "name": "Diogo Moretti",
-    "url": "diogo.pearljam@gmail.com"
-  },
+  "author": [
+    {
+      "name": "Diogo Moretti",
+      "email": "diogo.pearljam@gmail.com",
+      "url": "https://github.com/diogomoretti"
+    },
+    {
+      "name": "Anderson Aguiar",
+      "email": "andersonaguiar.web@gmail.com",
+      "url": "https://github.com/andersonaguiar"
+    }
+  ],
   "devDependencies": {
     "gulp": "*",
     "gulp-stylus": "0.0.12",
