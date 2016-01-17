@@ -1,0 +1,112 @@
+@import 'vendor/normalize'
+@import 'vendor/grider'
+
+@font-face
+  font-family: 'intro_rust_gbase_2_line'
+  src: url('../fonts/introrustg-base2line-webfont.eot')
+  src: url('../fonts/introrustg-base2line-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/introrustg-base2line-webfont.woff2') format('woff2'),
+       url('../fonts/introrustg-base2line-webfont.woff') format('woff'),
+       url('../fonts/introrustg-base2line-webfont.ttf') format('truetype'),
+       url('../fonts/introrustg-base2line-webfont.svg#intro_rust_gbase_2_line') format('svg')
+  font-weight: normal
+  font-style: normal
+
+html, body
+  height: 100%
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+body
+  font-size: 62.5%
+  background: #fff
+  font-family: 'Arial', sans-serif
+  
+.fork-button
+  display: block
+  text-align: center
+  padding: .5em 0
+  font-size: 1.2em
+  text-transform: uppercase
+  font-weight: bold
+  color: #777
+  width: 30em
+  background: #eee
+  position: absolute
+  transform: rotate(45deg)
+  top: 5em
+  right: -9em
+  text-decoration: none
+  transition: background .5s ease
+  
+  &:hover
+    background: #444
+    color: #fff
+
+.header
+  display: flex
+  background: #3AF2A2
+  height: 100%
+  
+.header-content
+  margin: auto
+  
+.header-logo
+  padding: 0
+  margin: 0
+  
+.header-logo--text
+  display: block
+  font-family: 'intro_rust_gbase_2_line'
+  font-weight: normal
+  font-size: 3em
+  color: #333
+  line-height: 1
+  margin: .3em 0 0 0
+
+.header-logo--cup
+  font-size: 90%
+  display: block
+  margin: 0 auto
+  width: 5em
+  height: 9em
+  border: .5em solid #333
+  border-radius: 0 0 .5em .5em
+  position: relative
+  
+  &:before
+    content: ''
+    position: absolute
+    bottom: -.5em
+    left: 50%
+    display: block
+    width: 0
+    height: 13em
+    border: .31em solid #333
+    transform: rotate(15deg)
+    border-radius: .1em
+    
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    background: #fff
+    animation: cup-water 10s linear infinite
+    
+.header-description
+  padding: 0
+  margin: 0
+  color: #fff
+  font-size: 1.7em
+  margin: .3em 0 0 0
+  text-align: center
+  font-weight: bold
+    
+@keyframes cup-water
+  from
+    top: 0
+  to
+    top: 80%
