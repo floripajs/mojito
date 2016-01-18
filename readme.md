@@ -1,2 +1,2 @@
 # Mojito
-> Gulp + Babel + ES6 + Stylus
+> Generate a project using Gulp (fully ES6) + Sass/Stylus + Livereload

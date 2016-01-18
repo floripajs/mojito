@@ -1,6 +1,6 @@
 {
   "name": "mojito",
-  "description": "Gulp + Babel + ES6 + Stylus",
+  "description": "Generate a project using Gulp (fully ES6) + Sass/Stylus + Livereload",
   "version": "0.1.0",
   "author": [
     {
