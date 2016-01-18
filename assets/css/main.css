@@ -348,6 +348,7 @@ pre {
   color: #333;
   line-height: 1;
   margin: 0.3em 0 0 0;
+  text-align: center;
 }
 .header-logo--cup {
   font-size: 90%;
@@ -401,7 +402,7 @@ pre {
   font-weight: bold;
 }
 .section {
-  padding: 3em 0;
+  padding: 3em 1em;
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
