@@ -1,16 +1,5 @@
 @import 'vendor/normalize'
 @import 'vendor/grider'
-
-@font-face
-  font-family: 'intro_rust_gbase_2_line'
-  src: url('../fonts/introrustg-base2line-webfont.eot')
-  src: url('../fonts/introrustg-base2line-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/introrustg-base2line-webfont.woff2') format('woff2'),
-       url('../fonts/introrustg-base2line-webfont.woff') format('woff'),
-       url('../fonts/introrustg-base2line-webfont.ttf') format('truetype'),
-       url('../fonts/introrustg-base2line-webfont.svg#intro_rust_gbase_2_line') format('svg')
-  font-weight: normal
-  font-style: normal
   
 @font-face
   font-family: 'raleway'
@@ -47,7 +36,6 @@
   
 $color-primary = #3AF2A2
 $font-default  = 'raleway', Arial, sans-serif
-$font-title    = 'intro_rust_gbase_2_line', Arial, sans-serif
 
 html, body
   font-family: sans-serif
@@ -128,13 +116,12 @@ pre
   
 .header-logo--text
   display: block
-  font-family: $font-title
-  font-weight: normal
-  font-size: 3em
-  color: #333
-  line-height: 1
-  margin: .3em 0 0 0
-  text-align: center
+  width: 240px
+  height: 2.8em
+  margin: 1em auto 0 auto
+  background: url('../img/logo-mojito.png') 0 0 no-repeat
+  background-size: 100% auto
+  text-indent: -9999em
 
 .header-logo--cup
   font-size: 90%

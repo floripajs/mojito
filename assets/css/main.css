@@ -237,13 +237,6 @@ body *zoom:1:after {
 @media (max-width: 580px) {
 }
 @font-face {
-  font-family: 'intro_rust_gbase_2_line';
-  src: url("../fonts/introrustg-base2line-webfont.eot");
-  src: url("../fonts/introrustg-base2line-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/introrustg-base2line-webfont.woff2") format('woff2'), url("../fonts/introrustg-base2line-webfont.woff") format('woff'), url("../fonts/introrustg-base2line-webfont.ttf") format('truetype'), url("../fonts/introrustg-base2line-webfont.svg#intro_rust_gbase_2_line") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: 'raleway';
   src: url("../fonts/raleway-light-webfont.eot");
   src: url("../fonts/raleway-light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/raleway-light-webfont.woff2") format('woff2'), url("../fonts/raleway-light-webfont.woff") format('woff'), url("../fonts/raleway-light-webfont.ttf") format('truetype'), url("../fonts/raleway-light-webfont.svg#raleway") format('svg');
@@ -355,13 +348,14 @@ pre {
 }
 .header-logo--text {
   display: block;
-  font-family: 'intro_rust_gbase_2_line', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 3em;
-  color: #333;
-  line-height: 1;
-  margin: 0.3em 0 0 0;
-  text-align: center;
+  width: 240px;
+  height: 2.8em;
+  margin: 1em auto 0 auto;
+  background: url("../img/logo-mojito.png") 0 0 no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
+  text-indent: -9999em;
 }
 .header-logo--cup {
   font-size: 90%;
