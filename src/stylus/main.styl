@@ -65,13 +65,16 @@ code, pre
   padding: .3em .4em
   border: 1px solid darken(@background, 8%)
   border-radius: 4px
-  font-family: monospace
+  font-family: 'Lucida Console', Monaco, monospace
   font-weight: normal
+
+code
+  font-size: .9em
   
 pre
   display: block
   max-width: 98%
-  font-size: 1.8em
+  font-size: 1.4em
   padding: .1em
   color: #444
   margin: 1.5em 0
@@ -96,6 +99,20 @@ pre
   &:hover
     background: #444
     color: #fff
+    
+.heart
+  font-size: 1.2em
+  font-weight: normal
+  animation: beat 1.5s ease-in-out infinite
+  color: #D24D57
+    
+@keyframes beat
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.1)
+  100%
+    transform: scale(1)
 
 .header
   display: flex
@@ -184,7 +201,7 @@ pre
   font-size: 4em
   text-transform: uppercase
   
-.section-text
+.section-text, .section-list--item
   font-weight: normal
   font-size: 1.8em
   line-height: 1.8em
@@ -194,9 +211,38 @@ pre
     text-decoration: none
     color: #333
     padding-bottom: .1em
-    border-bottom: 1px solid #ccc
+    border-bottom: 1px solid $color-primary
     
     &:hover
       color: #000
-      border-color: $color-primary
   
+.section-list
+  padding: 0
+  margin: 1em 0
+
+.section-list--item
+  padding-left: .7em
+  margin-left: 1em
+  margin-bottom: 1em
+
+
+.footer
+  padding: 2em 0
+  margin-top: 5em
+  background: #444
+  
+.footer-credits
+  font-size: 1.4em
+  color: #ccc
+  text-align: center
+  font-weight: normal
+  
+  a
+    color: @color
+    text-decoration: none
+    padding-bottom: .1em
+    border-bottom: 1px solid #333
+    
+    &:hover
+      color: #fff
+      border-color: $color-primary
