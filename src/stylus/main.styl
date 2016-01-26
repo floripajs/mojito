@@ -67,6 +67,9 @@ pre
   color: #444
   margin: 1.5em 0
   
+  @media phone
+    overflow: auto
+  
 .fork-button
   display: block
   text-align: center
@@ -83,10 +86,14 @@ pre
   right: -9em
   text-decoration: none
   transition: background .5s ease
+  z-index: 100
   
   &:hover
     background: #444
     color: #fff
+    
+  @media phone
+    position: absolute
     
 .heart
   font-size: 1.2em

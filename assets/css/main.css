@@ -290,6 +290,11 @@ pre {
   color: #444;
   margin: 1.5em 0;
 }
+@media (max-width: 580px) {
+  pre {
+    overflow: auto;
+  }
+}
 .fork-button {
   display: block;
   text-align: center;
@@ -314,10 +319,16 @@ pre {
   -o-transition: background 0.5s ease;
   -ms-transition: background 0.5s ease;
   transition: background 0.5s ease;
+  z-index: 100;
 }
 .fork-button:hover {
   background: #444;
   color: #fff;
+}
+@media (max-width: 580px) {
+  .fork-button {
+    position: absolute;
+  }
 }
 .heart {
   font-size: 1.2em;
