@@ -29,7 +29,7 @@ gulp.task('stylus', function () {
         .pipe(plumber())
         .pipe(stylus({
             use: ['nib'], 
-            //set: ['compress']
+            set: ['compress']
         }))
         .pipe(gulp.dest('./assets/css'))
         .pipe(connect.reload());
